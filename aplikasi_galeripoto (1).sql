@@ -39,11 +39,6 @@ CREATE TABLE `album` (
 -- Dumping data untuk tabel `album`
 --
 
-INSERT INTO `album` (`albumid`, `namaalbum`, `deskripsi`, `tanggalbuat`, `userid`) VALUES
-(25, 'foto aku', 'foto aku ini semuaa bagus', '2024-11-15', 9),
-(26, 'garuda cyber', 'foto bareng bareng', '2024-11-15', 9),
-(27, 'album sami', 'album sami', '2024-11-20', 17),
-(28, 'airin', 'foto airin coba', '2024-11-21', 18);
 
 -- --------------------------------------------------------
 
@@ -64,14 +59,6 @@ CREATE TABLE `foto` (
 --
 -- Dumping data untuk tabel `foto`
 --
-
-INSERT INTO `foto` (`fotoid`, `judulfoto`, `deskripsifoto`, `tanggalunggah`, `lokasifile`, `albumid`, `userid`) VALUES
-(15, 'nely', 'foto aku ini semua bagus', '2024-11-15', '2095747379-1731655749.jpg', 25, 9),
-(16, 'foto bareng', 'foto bareng bareng', '2024-11-15', '1750902273-1731657050.jpg', 26, 9),
-(17, 'foto apa aja', 'yang penting foto', '2024-11-18', '2076126348-1731912703.jpg', 25, 9),
-(18, 'sammi', 'sammi', '2024-11-20', '318883690-1732098238.jpg', 27, 17),
-(19, 'foto nely', 'ya foto nely', '2024-11-21', '716387379-1732372288.jpg', 28, 18);
-
 -- --------------------------------------------------------
 
 --
@@ -90,11 +77,6 @@ CREATE TABLE `komentarfoto` (
 -- Dumping data untuk tabel `komentarfoto`
 --
 
-INSERT INTO `komentarfoto` (`komentarid`, `fotoid`, `userid`, `isikomentar`, `tanggalkomentar`) VALUES
-(1, 15, 9, 'AKUUU', '2024-11-22'),
-(2, 15, 11, 'COBA', '2024-11-22'),
-(3, 15, 11, 'yaaaaaaaaa cntik', '2024-11-25');
-
 -- --------------------------------------------------------
 
 --
@@ -111,10 +93,6 @@ CREATE TABLE `likefoto` (
 --
 -- Dumping data untuk tabel `likefoto`
 --
-
-INSERT INTO `likefoto` (`likeid`, `fotoid`, `userid`, `tanggallike`) VALUES
-(50, 15, 17, '2024-11-20'),
-(64, 15, 11, '2024-11-25');
 
 -- --------------------------------------------------------
 
